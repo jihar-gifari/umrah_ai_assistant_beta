@@ -104,7 +104,7 @@ def chat_input_area():
     st.markdown(button_css, unsafe_allow_html=True)
     
     # Use columns for layout
-    cols = st.columns([0.9, 0.1], gap="small")
+    cols = st.columns([0.9, 0.1])
     with cols[0]:
         # Text input for user message
         user_input = st.text_input("", placeholder="Type your message here...", key="user_input")
