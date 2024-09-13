@@ -6,13 +6,13 @@ The project aims to create an artificial intelligent system that assists Umrah p
 ## Video Explanation
 
 <p align="center">
-  <a href="[https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://www.youtube.com/watch?v=qHnCL9GvJug)" target="_blank">
-    <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg" alt="AI Umrah Assistant Video Explanation" width="600" height="340" />
+  <a href="https://www.youtube.com/watch?v=qHnCL9GvJug" target="_blank">
+    <img src="https://img.youtube.com/vi/qHnCL9GvJug/0.jpg" alt="AI Umrah Assistant Video Presentation" width="600" height="340" />
   </a>
 </p>
 
 ## Prototype Website:
-[![Prototype Website](https://img.shields.io/badge/Prototype-Website-orange)]([https://your-product-website.com](https://umrahaiapp4py-fkjkrj4h6kvangrj7zfiqe.streamlit.app/))
+[![Live Prototype](https://img.shields.io/badge/Prototype-Link-green)](https://umrahaiapp4py-fkjkrj4h6kvangrj7zfiqe.streamlit.app/)
 
 ## Project Overview:
 The increasing number of Umrah and Hajj pilgrims presents both opportunities and challenges in managing large-scale religious tourism efficiently (General Authority for Statistics, 2023). Despite this huge numbers, the KSA government aims to grow the amount of external Umrah visitors to 30 million by the year 2030 (Vision2030, 2023). On the other hand, while the adoption of Large Language Models (LLMs) is increasing across various domains, in the realm Umrah and Hajj, the application of LLMs remains largely unexplored. 
