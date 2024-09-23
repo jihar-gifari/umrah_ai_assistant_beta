@@ -49,5 +49,17 @@ This folder contains the Python scripts used for building and deploying the conv
 ### 4. **requirements.txt**
 This file lists the necessary Python dependencies required to run the project. It includes libraries for OpenAI embeddings, vector database handling, web scraping, and natural language processing (NLP). Install these dependencies with:
 
+### 5. **umrah_ai_app4.py**
+This script builds the Streamlit app for the AI Umrah Assistant, providing an interactive chat interface where users can ask Umrah-related queries. The app integrates the fine-tuned GPT-3.5 Turbo model with a conversational flow.
+
+Key components:
+- Streamlit is used to create the web interface.
+- OpenAI API is utilized to fetch responses from the fine-tuned model.
+- The user can interact with the assistant through a chat input field, where their questions are appended to a chat log, and the assistant's responses are displayed.
+- The chat log is stored in the session state to maintain the conversation history.
+- The app also supports real-time feedback, allowing the user to send messages and receive responses from the model in real-time.
+- This script combines the functionalities of the fine-tuned model and web interface, providing a user-friendly experience for pilgrims seeking assistance on Umrah practices and logistics.
+
+
 
 
