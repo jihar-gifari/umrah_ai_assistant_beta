@@ -16,6 +16,8 @@ api_key = st.secrets["OPENAI_API_KEY"]
 # Correct OpenAI client initialization
 openai.api_key = api_key 
 
+client = OpenAI()
+
 st.set_page_config(page_title="AI Umrah Assistant", layout="wide")
 st.title('AI Umrah Assistant')
 
