@@ -4,11 +4,17 @@ import openai
 import streamlit as st
 from streamlit_chat import message
 
-# Fetch your API key securely
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+# # Fetch your API key securely
+# openai.api_key = st.secrets["OPENAI_API_KEY"]
 
-# Instantiate the OpenAI client
-client = openai.OpenAI(api_key=openai.api_key)
+# # Instantiate the OpenAI client
+# client = openai.OpenAI(api_key=openai.api_key)
+
+# Fetch API key from Streamlit secrets
+api_key = st.secrets["OPENAI_API_KEY"]
+
+# Instantiate OpenAI client correctly
+client = openai.OpenAI(api_key=api_key)  # Pass the API key as a parameter
 
 st.set_page_config(page_title="AI Umrah Assistant", layout="wide")
 st.title('AI Umrah Assistant')
