@@ -3,6 +3,8 @@ import os
 import openai
 import streamlit as st
 from streamlit_chat import message
+from openai import OpenAI
+
 
 # # Fetch your API key securely
 # openai.api_key = st.secrets["OPENAI_API_KEY"]
