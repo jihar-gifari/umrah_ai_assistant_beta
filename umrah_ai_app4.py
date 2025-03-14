@@ -13,8 +13,8 @@ from streamlit_chat import message
 # Fetch API key from Streamlit secrets
 api_key = st.secrets["OPENAI_API_KEY"]
 
-# Correct way to initialize OpenAI client
-client = openai.Client(api_key=api_key)  # ✅ Correct
+# Correct OpenAI client initialization
+openai.api_key = api_key 
 
 st.set_page_config(page_title="AI Umrah Assistant", layout="wide")
 st.title('AI Umrah Assistant')
