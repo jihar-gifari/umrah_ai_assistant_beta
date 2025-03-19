@@ -3,12 +3,17 @@ import os
 import openai
 import streamlit as st
 from streamlit_chat import message
+from openai import OpenAI
+
 
 # Fetch API key from Streamlit secrets
 api_key = st.secrets["OPENAI_API_KEY"]
 
-# Instantiate the OpenAI client
-client = openai.OpenAI(api_key=api_key)
+# Set the OpenAI API key (no extra client instantiation)
+openai.api_key = api_key
+
+# # Instantiate the OpenAI client
+# client = OpenAI()
 
 st.set_page_config(page_title="AI Umrah Assistant", layout="wide")
 st.title('AI Umrah Assistant')
@@ -26,7 +31,7 @@ def ask(model, prompt, chat_log):
     messages = chat_log + [{"role": "user", "content": prompt}]
     
     # Make the API call using the new client instance method
-    response = client.chat.completions.create(
+    response = openai.ChatCompletion.create(
         model=model,
         messages=messages,
         max_tokens=150  # Adjust the number of tokens as needed
