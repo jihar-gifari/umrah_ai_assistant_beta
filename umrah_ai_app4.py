@@ -5,8 +5,7 @@ import streamlit as st
 from streamlit_chat import message
 from openai import OpenAI
 from openai import Client  # use the new Client class
-
-
+import base64
 
 # Fetch API key from Streamlit secrets
 api_key = st.secrets["OPENAI_API_KEY"]
