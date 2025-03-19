@@ -19,15 +19,10 @@ client = Client(api_key=api_key)
 
 st.set_page_config(page_title="AI Umrah Assistant", layout="wide")
 # st.image("assets/logo-ihsan-1-black.png", width=200)  # Adjust width as needed
-st.markdown(
-    """
-    <div style="text-align: center;">
-        <img src="assets/logo-ihsan-1-black.png" width="200">
-        <h1>AI Umrah Assistant</h1>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.image("assets/logo-ihsan-1-black.png", width=200)
+    st.title("AI Umrah Assistant")
 #st.title('AI Umrah Assistant')
 
 
