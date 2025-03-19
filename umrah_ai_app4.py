@@ -16,6 +16,11 @@ openai.api_key = api_key
 # # Instantiate the OpenAI client
 client = Client(api_key=api_key)
 
+def get_base64_image(image_path):
+    with open(image_path, "rb") as image_file:
+        encoded = base64.b64encode(image_file.read()).decode()
+    return encoded
+    
 st.set_page_config(page_title="AI Umrah Assistant", layout="wide")
 # st.image("assets/logo-ihsan-1-black.png", width=200)  # Adjust width as needed
 # Get Base64 string from your image file located in assets folder
