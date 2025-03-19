@@ -31,7 +31,7 @@ def ask(model, prompt, chat_log):
     messages = chat_log + [{"role": "user", "content": prompt}]
     
     # Make the API call using the new client instance method
-    response = openai.ChatCompletion.create(
+    response = openai.chat.completions.create(
         model=model,
         messages=messages,
         max_tokens=150  # Adjust the number of tokens as needed
