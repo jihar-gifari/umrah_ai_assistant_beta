@@ -19,10 +19,19 @@ client = Client(api_key=api_key)
 
 st.set_page_config(page_title="AI Umrah Assistant", layout="wide")
 # st.image("assets/logo-ihsan-1-black.png", width=200)  # Adjust width as needed
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-    st.image("assets/logo-ihsan-1-black.png", width=200)
-    st.title("AI Umrah Assistant")
+# Get Base64 string from your image file located in assets folder
+logo_path = "assets/logo-ihsan-1-black.png"
+logo_base64 = get_base64_image(logo_path)
+
+# Build HTML with centered image and title
+html = f"""
+<div style="text-align: center;">
+    <img src="data:image/png;base64,{logo_base64}" width="200"><br>
+    <h1>AI Umrah Assistant</h1>
+</div>
+"""
+
+st.markdown(html, unsafe_allow_html=True)
 #st.title('AI Umrah Assistant')
 
 
