@@ -18,7 +18,9 @@ openai.api_key = api_key
 client = Client(api_key=api_key)
 
 st.set_page_config(page_title="AI Umrah Assistant", layout="wide")
+st.image("assets/logo-ihsan-1-black.png", width=200)  # Adjust width as needed
 st.title('AI Umrah Assistant')
+
 
 # Initialize chat_log as a list in the session state if it doesn't exist
 if 'chat_log' not in st.session_state:
